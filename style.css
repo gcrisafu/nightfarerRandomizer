@@ -1,0 +1,45 @@
+body {
+    background-color: #003a52;
+}
+
+#title {
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+#label {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#nightfarer {
+    display: block;
+    font-size: 10em;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#myButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#myButton:hover {
+    background-color: #04d9ff;
+}
