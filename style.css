@@ -1,5 +1,5 @@
 body {
-    background-color: #003a52;
+    background-color: #251636;
 }
 
 #title {
@@ -17,7 +17,14 @@ body {
 }
 
 
-    #nightfarer {
+#nightfarerImage {
+    text-align:center;
+    margin:auto;
+    height: 400px;
+}
+
+
+#nightfarer {
     font-size: 5em;
     text-align: center;
     color: white;

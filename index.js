@@ -7,22 +7,22 @@ const arr = ["Executor", "Revenant", "Guardian",
 ]
 
 
-
-
-document.getElementById("myButton").onclick = function() {
-    const name = (math.floor(math.random(8))+ 1);
-    document.getElementById("nightfarer").textContent = name;
-}
-
-
 const myButton = document.getElementById("myButton");
 const nightfarer = document.getElementById("nightfarer");
+const nightfarerImage = document.getElementById("nightfarerImage");
+const imageArr = []
 
-const max = 8;
-let randomNum;
-
-myButton.onclick = function() {
-    randomNum = Math.floor(Math.random() * max);
-    nightfarer.textContent = arr[randomNum];
-
+function imageLoad(){ for(let i = 0; i < 8; i++){
+       imageArr.push(`<img src="nightfarer_images/${i}.png">`); 
+    }    
 }
+
+imageLoad();
+
+function pickNightfarer(){
+    const value = Math.floor(Math.random() * 8); // getting a number 1 through 7 because there are 8 nightfareres but one of them is at the zero index
+    document.getElementById("nightfarer").textContent = arr[value];
+    nightfarerImage.innerHTML = imageArr[value];
+      
+}
+
