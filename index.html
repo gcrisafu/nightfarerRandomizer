@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testing</title>
+    <title>Nightfarer Randomizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <div id="containerContainer">
+    <div class="buttonsClass">
+    <button onclick="selectNightfarer(4)" id="Dutchess" class="nfButtons">Dutchess</button>
+    <button onclick="selectNightfarer(0)" id="Executor" class="nfButtons">Executor</button>
+    <button onclick="selectNightfarer(2)" id="Guardian" class="nfButtons">Guardian</button>            
+    <button onclick="selectNightfarer(3)" id="Ironeye" class="nfButtons">Ironeye</button>        
+    <button onclick="selectNightfarer(6)" id="Raider" class="nfButtons">Raider</button>
+    <button onclick="selectNightfarer(5)" id="Recluse" class="nfButtons">Recluse</button>
+    <button onclick="selectNightfarer(1)" id="Revenant" class="nfButtons">Revenant</button>
+    <button onclick="selectNightfarer(7)" id="Wylder" class="nfButtons">Wylder</button>    
+
+
+
+
+
+    </div>
     <div id="container">
     <h1 id ="title">Nightfarer Randomizer</h1>
     <div id="nightfarerImage"></div>
@@ -15,6 +32,7 @@
     <h2 id="nightfarer"></h2>
     <label id="label">Pick a Nightfarer</label>
     <button onclick="pickNightfarer()" id="myButton">Roll</button>
+    </div>
     </div>
 
     <script src="index.js"></script>

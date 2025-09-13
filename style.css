@@ -1,5 +1,7 @@
 body {
     background-color: #140225;
+    display:flex;
+    justify-content: center;
 }
 
 #container {
@@ -61,6 +63,7 @@ body {
 }
 
 #myButton:hover {
+    color: black;
     background-color: #04d9ff;
 }
 
@@ -101,3 +104,32 @@ body {
 .scaling-table tr:hover {
     background-color: #513169;
 }
+
+#containerContainer {
+    display:flex;
+    width: 600px;
+}
+
+.buttonsClass{
+    margin: 100px 0px 0px 0px;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.nfButtons {
+    font-size: 1em;
+    background-color: #251636;   
+    background-color: #513169;    
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    height: 46px;
+    width: 80px;
+    cursor:pointer;
+}
+
+.nfButtons:hover{
+    background-color:white;
+}
+
+

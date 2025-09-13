@@ -6,7 +6,7 @@ const arr = ["Executor", "Revenant", "Guardian",
 "Wylder"
 ]
 
-
+const selectNightfarerButton = document.getElementById("Wylder");
 const myButton = document.getElementById("myButton");
 const nightfarer = document.getElementById("nightfarer");
 const nightfarerImage = document.getElementById("nightfarerImage");
@@ -18,13 +18,6 @@ function imageLoad(){ for(let i = 0; i < 8; i++){
 }
 
 imageLoad();
-
-function pickNightfarer(){
-    const value = Math.floor(Math.random() * 8); // getting a number 1 through 7 because there are 8 nightfareres but one of them is at the zero index
-    document.getElementById("nightfarer").textContent = arr[value];
-    nightfarerImage.innerHTML = imageArr[value];
-      
-}
 
 // SCALING TABLE
 
@@ -85,3 +78,15 @@ function pickNightfarer(){
 }
 
 table.classList.add("scaling-table");
+
+
+function selectNightfarer(num){
+    
+    console.log(num)
+    const chosen = arr[num];
+    nightfarer.textContent = chosen   // update name
+    nightfarerImage.innerHTML = imageArr[num]; // update image
+    displayRowByName(chosen);     
+}
+
+
