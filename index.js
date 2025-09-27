@@ -82,11 +82,20 @@ table.classList.add("scaling-table");
 
 function selectNightfarer(num){
     
-    console.log(num)
     const chosen = arr[num];
     nightfarer.textContent = chosen   // update name
     nightfarerImage.innerHTML = imageArr[num]; // update image
     displayRowByName(chosen);     
 }
+
+
+document.addEventListener('keyup', function(event) {
+    if (event.key === ' '){
+        event.preventDefault();
+        pickNightfarer();
+        
+    }
+})
+
 
 
