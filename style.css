@@ -34,8 +34,10 @@ body {
     text-align:center;
     margin:auto;
     height: 400px;
-    transition:.3s
+    transition: .3s;
 }
+
+
 #nightfarerImage:hover {
     scale:1.1;
 }
@@ -69,8 +71,8 @@ body {
 
 #myButton:hover {
     color: black;
-    background-color: #04d9ff;
-    scale:1.1;
+    background-color: #ffffff;
+    scale:1.2;
 }
 
 

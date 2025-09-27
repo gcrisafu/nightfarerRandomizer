@@ -69,12 +69,13 @@ function displayRowByName(name) {
 }
 
 function pickNightfarer(){
+
     const value = Math.floor(Math.random() * arr.length);
     const chosen = arr[value];
-    
     nightfarer.textContent = chosen;        // update name
     nightfarerImage.innerHTML = imageArr[value]; // update image
     displayRowByName(chosen);               // update table
+    
 }
 
 table.classList.add("scaling-table");
@@ -89,13 +90,40 @@ function selectNightfarer(num){
 }
 
 
+myButton.addEventListener('click', spinNightfarer);
+
+
 document.addEventListener('keyup', function(event) {
-    if (event.key === ' '){
+    if (event.code === 'Space') {
         event.preventDefault();
-        pickNightfarer();
-        
+        spinNightfarer();
     }
-})
+});
+
+
+let rolling = false;
+
+function spinNightfarer() {
+    if (rolling) return;
+    rolling = true;
+
+    let count = 40;
+    let delay = 40;
+
+    function spin() {
+        pickNightfarer();
+        count--;
+
+        if (count > 0) {
+            delay += 1; // slows down
+            setTimeout(spin, delay);
+        } else {
+            rolling = false;
+        }
+    }
+
+    spin();
+}
 
 
 
